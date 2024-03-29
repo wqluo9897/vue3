@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="../../../../jquery-3.6.0.min.js"></script>
+
+<script>
+  function handleClick() {
+    alert('按钮被点击了！');
+    var $h4id = $('#h4id');
+// 更改元素的内容
+    $h4id.text('这是更改后的内容');
+    $h4id.toggleClass('highlight');
+  }
+
+
+</script>
+</head>
+<body>
+    
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<hr>
+
+<h1>⼀号标题</h1> 
+<h2>⼆号标题</h2> 
+<h3>三号标题</h3> 
+<h4>四号标题</h4> 
+<h5>五号标题</h5>
+ <h6>六号标题</h6>
+
+ hello&nbsp;world<br>
+
+ <h2>今⽇学习内容：</h2>
+<p>学了标题标签</p>
+
+<b>我是加粗⽂字1</b> <br>
+<strong>我是加粗⽂字2</strong>
+<br>
+
+<i>我是i</i> 
+<em>我是em</em><br>
+
+原价:<s>998</s> 
+现值:9.98
+<br> 
+原价:<del>999</del> 
+现价:9.98<br>
+
+<img src="../assets/1.jpg" alt="加载中" width="200px" height="200px" title="⿏标悬停在图⽚上的提示⽂字"><br>
+
+<a href="http://www.baidu.com">点击我可以打开百度</a><br>
+<a href="http://www.baidu.com" target="_blank">点击我可以打开百度,并且打开新 的窗⼝</a><br>
+<a href="#">不变</a><br>
+
+<ul>
+    <li>python</li>
+    <li>java</li>
+    <li>go</li>
+</ul>
+
+<ol>
+    <li>基础班级</li>
+    <li>测试</li>
+    <li>python</li>
+</ol>
+
+<div>我是div</div> 
+<div>我是div</div> 
+<div>我是div</div> 
+<div>我是div</div> 
+<span>我是span</span> 
+<span>我是span</span> 
+<span>我是span</span> 
+<span>我是span</span>
+
+
+<br>
+
+<!-- 填写用户名及密码 -->
+<span>用户名：</span>
+<input type="text" placeholder="请输入用户名">
+<br>
+<span>密码：</span>&nbsp;&nbsp;&nbsp;
+<input type="password" placeholder="请输入密码">
+<br>
+<!-- 选择信息：选择 性别 爱好 -->
+<!-- 单选按钮 -->
+<!-- 一组按钮：他们俩都是来控制性别的,添加name属性 -->
+<span>性别：</span>
+<input type="radio" name="gender">
+<span>男</span>
+
+<input type="radio" name="gender">
+<span>女</span>
+<br>
+<!-- 多选按钮 -->
+<span>兴趣爱好：</span>
+<!-- <input type="checkbox"> 睡觉
+<input type="checkbox"> 打游戏
+<input type="checkbox"> 女
+<input type="checkbox"> 羽毛球 -->
+<!-- 优化:点击文字也可以选中多选框 -->
+<input type="checkbox" id="sleep"> 
+<label for="sleep">睡觉</label>
+<input type="checkbox" id="playgame"> 
+<label for="playgame">打游戏</label>
+<input type="checkbox" id="liangnv"> 
+<label for="liangnv">女</label>
+<input type="checkbox" id="yumaoqiu"> 
+<label for="yumaoqiu">羽毛球</label>
+<br>
+
+
+
+
+<select name="" id="">
+    <option value="">北京</option>
+    <option value="">上海</option>
+    <option value="">⼴州</option>
+    <option value="" selected="selected">深圳</option>
+</select> <br>
+
+<textarea name="" id="" cols="30" rows="10"></textarea>
+
+<br>
+
+<input type="button" value="按钮"> 
+<br>
+
+<input type="reset"> 
+<input type="reset" value="重置按钮"> 
+<br>
+
+
+<input type="submit" value="我是提交">
+
+<div>
+<p>我是红⾊的p</p>
+<p>我是红⾊的p</p>
+<p>我是红⾊的p</p>
+<span>我是复合的span</span>
+<h4 id=h4id>我是h4</h4>
+<h4 class="example">我是h4</h4>
+<h4 class="highlight">我是h4</h4>
+<h4 class="example highlight">我是h4</h4>
+</div>
+
+<button onclick="handleClick()">点击我</button>
+
+</body>
+<style>
+
+input:focus{
+        background-color: pink;
+        color: darkred;
+   }
+
+a:visited {
+    color:yellow;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+    div p,span {
+        color:aqua
+    }
+
+    p{
+            color: red;
+       }
+
+      /* 定义类名为 .example 的元素的样式 */
+  .example {
+    color: blue; /* 文本颜色设置为蓝色 */
+    font-size: 18px; /* 字体大小设置为18像素 */
+  }
+
+  /* 定义类名为 .highlight 的元素的样式 */
+  .highlight {
+    background-color: yellow; /* 背景颜色设置为黄色 */
+  }
+
+  /* 定义同时具有 .example 和 .highlight 类名的元素的样式 */
+  .example.highlight {
+    font-weight: bold; /* 字体加粗 */
+  }
+
+  #h4id {
+    color: green;
+  }
+</style>
+</html>
