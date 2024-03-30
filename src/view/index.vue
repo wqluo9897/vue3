@@ -34,7 +34,7 @@ const routeLink = [
 </script>
 <template>
   <div >
-    <h1>首页-基础组件学习,666666</h1>
+    <h1>首页-基础组件学习,999</h1>
     <div class="flex">
       <!-- <router-link :to="item.path">{{ item.name }}</router-link>
       <hr /> -->
